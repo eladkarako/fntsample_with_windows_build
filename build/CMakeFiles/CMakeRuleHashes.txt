@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+8a67b3766a69985ff79b16c782d81082 po/CMakeFiles/pofiles
+65f0fa611716ad099c7066a259269495 po/CMakeFiles/updatepo-only-uk
+65f0fa611716ad099c7066a259269495 po/CMakeFiles/updatepo-uk
+b0ab54489413324b56169c20c31b9ba9 po/CMakeFiles/updatepot
+74c16655df1c1083fea16d3464c1ec0c po/uk.gmo
+824416a0ef97ed47d63024cdb6dad432 src/static_unicode_blocks.c

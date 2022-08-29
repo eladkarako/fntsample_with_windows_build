@@ -1,0 +1,28 @@
+Performing C SOURCE FILE Test Intl_IS_BUILT_IN failed with the following output:
+Change Dir: /home/Elad/fntsample/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe -f Makefile cmTC_fa90b/fast && /usr/bin/make  -f CMakeFiles/cmTC_fa90b.dir/build.make CMakeFiles/cmTC_fa90b.dir/build
+make[1]: Entering directory '/home/Elad/fntsample/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa90b.dir/src.c.o
+/usr/bin/cc -DIntl_IS_BUILT_IN  -std=gnu99 -o CMakeFiles/cmTC_fa90b.dir/src.c.o -c /home/Elad/fntsample/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fa90b.exe
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_fa90b.dir/link.txt --verbose=1
+/usr/bin/cc -Wl,--enable-auto-import  CMakeFiles/cmTC_fa90b.dir/src.c.o -o cmTC_fa90b.exe -Wl,--out-implib,libcmTC_fa90b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: CMakeFiles/cmTC_fa90b.dir/src.c.o:src.c:(.text+0x18): undefined reference to `libintl_gettext'
+/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: CMakeFiles/cmTC_fa90b.dir/src.c.o:src.c:(.text+0x31): undefined reference to `libintl_dgettext'
+/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: CMakeFiles/cmTC_fa90b.dir/src.c.o:src.c:(.text+0x50): undefined reference to `libintl_dcgettext'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fa90b.dir/build.make:99: cmTC_fa90b.exe] Error 1
+make[1]: Leaving directory '/home/Elad/fntsample/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_fa90b/fast] Error 2
+
+
+Source file was:
+#include <libintl.h>
+int main(void) {
+  gettext("");
+  dgettext("", "");
+  dcgettext("", "", 0);
+  return 0;
+}
+

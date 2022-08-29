@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--enable-auto-import "CMakeFiles/gen-unicode-blocks.dir/gen_unicode_blocks.c.o" "CMakeFiles/gen-unicode-blocks.dir/read_blocks.c.o" -o gen-unicode-blocks.exe -Wl,--out-implib,libgen-unicode-blocks.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

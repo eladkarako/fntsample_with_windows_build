@@ -1,0 +1,7 @@
+/usr/local/bin/fntsample.exe
+/usr/local/share/man/man1/fntsample.1
+/usr/local/bin/pdfoutline
+/usr/local/bin/pdf-extract-outline
+/usr/local/share/man/man1/pdfoutline.1
+/usr/local/share/man/man1/pdf-extract-outline.1
+/usr/local/share/locale/uk/LC_MESSAGES/fntsample.mo
