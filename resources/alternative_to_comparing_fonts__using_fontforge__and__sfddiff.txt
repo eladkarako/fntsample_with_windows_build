@@ -1,0 +1,21 @@
+1. download FontForge 
+
+https://github.com/fontforge/fontforge/actions  
+pick most recent green action in master branch.  
+scroll to the bottom and choose the mingw64.  
+open zip  
+don't use the setup folder, instead look at the bottom for something like this:  
+FontForge-mingw-w64-x86_64-c699b7-ci.7z  
+this is the program without the inno-setup,  
+copy anywhere...  
+
+2. copy 'sfddiff.ff' anywhere.
+
+3. run the following command, make sure to specify full-paths wrapped with "" when possible.
+
+`call "C:\path\to\fontforge.bat" -lang "ff" -script "C:\other\path\to\sfddiff.ff"  "font1.ttf" "font2.otf"  1>"C:\another\path\to\report.txt"  2>&1`  
+
+it will be very hard to read it from console,  
+so the following command will 'dump' it into a text file.  
+
+fix the paths above to your locations.
